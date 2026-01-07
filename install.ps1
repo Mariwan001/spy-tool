@@ -19,7 +19,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 
 Write-Host "Downloading SPY..." -ForegroundColor Yellow
 
-# Download URL (you'll replace this with your GitHub link)
+# Download URL
 $downloadUrl = "https://github.com/Mariwan001/spy-tool/releases/latest/download/spy.exe"
 $installPath = "C:\Program Files\SPY"
 $exePath = "$installPath\spy.exe"
@@ -69,19 +69,3 @@ Write-Host ""
 Write-Host "To uninstall: $installPath\uninstall.ps1" -ForegroundColor Yellow
 Write-Host ""
 pause
-```
-
-**Save this as `install.ps1`**
-
----
-
-## **Step 2: GitHub Repository Structure**
-
-Create these folders/files:
-```
-spy-tool/
-├── README.md
-├── install.ps1
-├── spy-installer.bat
-└── releases/
-    └── spy.exe
