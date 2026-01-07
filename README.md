@@ -9,9 +9,13 @@ Creator: **Mariwan Iraj**
 
 **PowerShell (Run as Administrator):**
 ```powershell
-irm https://raw.githubusercontent.com/Mariwan001/spy-tool/main/install.ps1 | iex
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Mariwan001/spy-tool/main/install.ps1" -OutFile "$env:TEMP\install.ps1" -UseBasicParsing; & "$env:TEMP\install.ps1"
 ```
 
+**Or shorter (may need cache clear):**
+```powershell
+irm https://raw.githubusercontent.com/Mariwan001/spy-tool/main/install.ps1 | iex
+```
 After installation, close and reopen your terminal, then type:
 ```cmd
 spy --help
