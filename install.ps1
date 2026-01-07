@@ -20,7 +20,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 Write-Host "Downloading SPY..." -ForegroundColor Yellow
 
 # Download URL (you'll replace this with your GitHub link)
-$downloadUrl = "https://github.com/YOUR-USERNAME/spy-tool/releases/latest/download/spy.exe"
+$downloadUrl = "https://github.com/Mariwan001/spy-tool/releases/latest/download/spy.exe"
 $installPath = "C:\Program Files\SPY"
 $exePath = "$installPath\spy.exe"
 
